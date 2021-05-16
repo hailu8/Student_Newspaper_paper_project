@@ -8,6 +8,8 @@ Clone or download the zip from githhub
         It will prompt the password for the newspaper_1; it is "apple". If you want to change it go to db_access.py and change the value.
 After this step, you have successfully loaded the table into the database. (disclaimer, it might take a 30 mins!)
 3. Write an SQL script to create the materialized view.
-
 4. Run server.py, and open http://127.0.0.1:8000/ with your browser.
+
+
+Note: We decided to submit a newspaper.sql file instead of using parse_xml because it was faster. Please contact us if you want to use parse_xml instead of the SQL dump. 
 
