@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CMSC828D-Final Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jQuery library -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script type='text/javascript' src='//code.jquery.com/jquery-2.0.2.js'></script>
+  <script type="text/javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+  <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+  <!-- Latest compiled JavaScript -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <!-- <link crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"> -->
+  <link href="../static/style.css" rel="stylesheet">
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+    
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- jQuery library -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script type='text/javascript' src='//code.jquery.com/jquery-2.0.2.js'></script> -->
+    <script type="text/javascript" src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <link crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+    <div class="jumbotron"></div><nav class="navbar navbar-dark">
+        <div class="form-inline nav-item">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search keywords" aria-label="Search">
+            <button class="btn btn-dark my-2 my-sm-0">Search</button>
+        </div>
+        <div class="form-check-inline nav-item title-filter">
+            <span style="color:#fff;">Filter By Newspaper Title:&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <form id="Radio_Type" class="form-check-inline">
+                <input class="form-check-input" type="radio" name="Paper_type_radio"  value="All" checked>
+                <label class="form-check-label">All Newspapers&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input class="form-check-input" type="radio" name="Paper_type_radio"  value="Both">
+                <label class="form-check-label">Both&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>				
+                <input class="form-check-input" type="radio" name="Paper_type_radio"  value="Black_Explosion" >
+                <label class="form-check-label">Black Explosion&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                <input class="form-check-input" type="radio" name="Paper_type_radio"  value="Mitzpeh" >
+                <label class="form-check-label">Mitzpeh</label>
+            </form>
+        </div>
+    </nav>
+​
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header bg-danger">Search Results</div>
+                            <div class="card-body scroll">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="papers-of-week card">
+                            <div class="card-header bg-danger">Papers of the week</div>
+                            <div class="papers-of-week-body card-body scroll">
+                            <span class="page">Page</span><br>
+                            <div>
+                                <a href="https://digital.lib.umd.edu/student-newspapers/id/80da787f-3d10-452f-9ea6-a0b2fca32062?relpath=pcdm&amp;query=news">Maryland state review (College Park, Md.), 1919-05-15, page 1</a>
+                                <div>
+                                Farmers’ Day is on May 30th. Sevieral of the Clubs have al­ready spread the news through­ out their counties, the Washing­ … rope could be procured. A representative of the Inter­national News
+                                Service was on hand with his camera to film the struggle, but … as alternate. The speak­ers for the negative were R. Stone, jr., and C. W. Cole, repre­senting the New Mercer Liter­ary.
+                                </div>
+                            </div>
+                            <span class="page">Page</span><br>
+                            <div>
+                                <a href="https://digital.lib.umd.edu/student-newspapers/id/113343bc-5d2a-472c-a4b8-e6d777783b11?relpath=pcdm&amp;query=news">Maryland state review (College Park, Md.), 1919-05-15, page 2</a>
+                                <div>
+                                    Athletics R. STONE, Jr Contributing Editor C. P. WILHELM News Editor REPORTERS E. K. Morgan. Elizabeth G, Hook. E. F. Russell C. E. Darnall. A collection is being taken up by the girls
+                                    at Gerneaux Hall to invest in some new headgear for “Cicero” Ady. Since the remainder of the year so there will be no call for the sponge at the very start of the new year.
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-7">
+                <div id="main">
+                    <!-- <svg> </svg> -->
+                    <svg width="1150" height="550"></svg>
+                </div>
+                <div id="universe">
+                    <div id="slider" class="multi-range-slider"></div>
+                    <div id="time-range" style = "width:100%">
+                        <div class="sliders_step1">
+                            <div id="slider-range"></div>
+                            </p>
+                        </div>
+                        <p id="ranges">Time Range: <span class="slider-time"></span> - <span class="slider-time2"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-header bg-danger title_div">How to explore the dashboard</div>
+                    <div class="card-body scroll-result">
+                    <p class="info">The scatter plot shows the newspapers in each year. You can click on them to see their content on this container. You can also filter the word count of shown articles using the slider.
+                    <!-- <p>Title: <span class="title_div"></span> </p> -->
+                    <p><span class="body_div"></span> </p>
+                    <p><span class="paper_div"></span> </p>
+                </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="scatterplot.js"></script>
+</html>
