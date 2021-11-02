@@ -10,6 +10,5 @@ After this step, you have successfully loaded the table into the database. (disc
 3. Write an SQL script to create the materialized view.
 4. Run server.py, and open http://127.0.0.1:8000/ with your browser.
 
-
-Note: We decided to submit a newspaper.sql file instead of using parse_xml because it was faster. Please contact us if you want to use parse_xml instead of the SQL dump. 
+Please contact me if you want to use parse_xml instead of the SQL dump. 
 
